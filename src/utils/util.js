@@ -6,10 +6,10 @@ const sumHeight = (data) =>
 
 const handleSort = (data, sortOrder, sortBy) =>
   data.sort((a, b) => {
-    const order = sortBy === 'ascending' ? 1 : -1;
+    const order = sortOrder === 'ascending' ? 1 : -1;
 
-    const c = typeof a[sortOrder] === 'string' ? a[sortOrder].toLowerCase() : a;
-    const d = typeof b[sortOrder] === 'string' ? b[sortOrder].toLowerCase() : b;
+    const c = typeof a[sortBy] === 'string' ? a[sortBy].toLowerCase() : a;
+    const d = typeof b[sortBy] === 'string' ? b[sortBy].toLowerCase() : b;
 
     if (c < d) {
       return -1 * order;
