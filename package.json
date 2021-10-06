@@ -1,7 +1,7 @@
 {
   "name": "metacare-application",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "app.js",
   "author": "Wuningson <christdam55@gmail.com>",
   "scripts": {
     "start": "node app.js",
